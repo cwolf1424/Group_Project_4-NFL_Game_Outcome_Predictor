@@ -19,20 +19,37 @@ Sources for Code
 The folowing data sources were used:
 
 --------------------------------------------------
-File_1.ipynb
+Grabbing_Data.ipynb
+--------------------------------------------------
+The following source was used for the method of pulling the data
+from Wikipedia tables:
+
+    https://pbpython.com/pandas-html-table.html
+
+
+--------------------------------------------------
+Wrangling_Data.ipynb
 --------------------------------------------------
 
 
 
 --------------------------------------------------
-File_2.ipynb
+Building_Model.ipynb
 --------------------------------------------------
 
 
 
+
 --------------------------------------------------
-File_3.ipynb
+Creating_Application.ipynb
+-------------------------------------------------
+
+
+
 --------------------------------------------------
+App.py
+-------------------------------------------------
+
 
 
 
