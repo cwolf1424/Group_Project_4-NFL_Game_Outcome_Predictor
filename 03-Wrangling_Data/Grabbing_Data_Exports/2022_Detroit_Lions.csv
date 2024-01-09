@@ -1,19 +1,19 @@
-,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather,time,location
-0,1,September 11,Philadelphia Eagles,L 35–38,0–1,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EDT,"Ford Field, Detroit, Michigan"
-1,2,September 18,Washington Commanders,W 36–27,1–1,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EDT,"Ford Field, Detroit, Michigan"
-2,3,September 25,at Minnesota Vikings,L 24–28,1–2,U.S. Bank Stadium,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EDT/12:00 p.m. CDT,"U.S. Bank Stadium, Minneapolis, Minnesota"
-3,4,October 2,Seattle Seahawks,L 45–48,1–3,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EDT,"Ford Field, Detroit, Michigan"
-4,5,October 9,at New England Patriots,L 0–29,1–4,Gillette Stadium,Recap,Detroit Lions,"Sunny, 58 °F (14 °C)",1:00 p.m. EDT,"Gillette Stadium, Foxborough, Massachusetts"
-5,6,Bye,Bye,Bye,Bye,Bye,Bye,Detroit Lions,,,
-6,7,October 23,at Dallas Cowboys,L 6–24,1–5,AT&T Stadium,Recap,Detroit Lions,None (retractable roof closed),1:00 p.m. EDT/12:00 p.m. CDT,"AT&T Stadium, Arlington, Texas"
-7,8,October 30,Miami Dolphins,L 27–31,1–6,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EDT,"Ford Field, Detroit, Michigan"
-8,9,November 6,Green Bay Packers,W 15–9,2–6,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EST,"Ford Field, Detroit, Michigan"
-9,10,November 13,at Chicago Bears,W 31–30,3–6,Soldier Field,Recap,Detroit Lions,"Scattered clouds, 34 °F (1 °C)",1:00 p.m. EST/12:00 p.m. CST,"Soldier Field, Chicago, Illinois"
-10,11,November 20,at New York Giants,W 31–18,4–6,MetLife Stadium,Recap,Detroit Lions,"Fair and breezy, 35 °F (2 °C)",1:00 p.m. EST,"MetLife Stadium, East Rutherford, New Jersey"
-11,12,November 24,Buffalo Bills,L 25–28,4–7,Ford Field,Recap,Detroit Lions,None (indoor stadium),12:30 p.m. EST,"Ford Field, Detroit, Michigan"
-12,13,December 4,Jacksonville Jaguars,W 40–14,5–7,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EST,"Ford Field, Detroit, Michigan"
-13,14,December 11,Minnesota Vikings,W 34–23,6–7,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EST,"Ford Field, Detroit, Michigan"
-14,15,December 18,at New York Jets,W 20–17,7–7,MetLife Stadium,Recap,Detroit Lions,"Mostly sunny, 39 °F (4 °C)",1:00 p.m. EST,"MetLife Stadium, East Rutherford, New Jersey"
-15,16,December 24,at Carolina Panthers,L 23–37,7–8,Bank of America Stadium,Recap,Detroit Lions,"Sunny, 20 °F (−7 °C)",1:00 p.m. EST,"Bank of America Stadium, Charlotte, North Carolina"
-16,17,January 1,Chicago Bears,W 41–10,8–8,Ford Field,Recap,Detroit Lions,None (indoor stadium),1:00 p.m. EST,"Ford Field, Detroit, Michigan"
-17,18,January 8,at Green Bay Packers,W 20–16,9–8,Lambeau Field,Recap,Detroit Lions,"Cloudy, 21 °F (−6 °C)",8:20 p.m. EST/7:20 p.m. CST,"Lambeau Field, Green Bay, Wisconsin"
+,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather_condition,temp_f,time,city,state
+0,1,September 11,Philadelphia Eagles,L 35–38,0–1,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,12:0,Detroit,Michigan
+1,2,September 18,Washington Commanders,W 36–27,1–1,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,12:0,Detroit,Michigan
+2,3,September 25,at Minnesota Vikings,L 24–28,1–2,U.S. Bank Stadium,Recap,Detroit Lions,None (indoor stadium),72,12:0,Minneapolis,Minnesota
+3,4,October 2,Seattle Seahawks,L 45–48,1–3,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,12:0,Detroit,Michigan
+4,5,October 9,at New England Patriots,L 0–29,1–4,Gillette Stadium,Recap,Detroit Lions,Sunny,58,12:0,Foxborough,Massachusetts
+5,6,Bye,Bye,Bye,Bye,Bye,Bye,Detroit Lions,,,,,
+6,7,October 23,at Dallas Cowboys,L 6–24,1–5,AT&T Stadium,Recap,Detroit Lions,None (retractable roof closed),72,12:0,Arlington,Texas
+7,8,October 30,Miami Dolphins,L 27–31,1–6,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,12:0,Detroit,Michigan
+8,9,November 6,Green Bay Packers,W 15–9,2–6,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,13:0,Detroit,Michigan
+9,10,November 13,at Chicago Bears,W 31–30,3–6,Soldier Field,Recap,Detroit Lions,Scattered clouds,34,13:0,Chicago,Illinois
+10,11,November 20,at New York Giants,W 31–18,4–6,MetLife Stadium,Recap,Detroit Lions,Fair and breezy,35,13:0,East Rutherford,New Jersey
+11,12,November 24,Buffalo Bills,L 25–28,4–7,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,12:30,Detroit,Michigan
+12,13,December 4,Jacksonville Jaguars,W 40–14,5–7,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,13:0,Detroit,Michigan
+13,14,December 11,Minnesota Vikings,W 34–23,6–7,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,13:0,Detroit,Michigan
+14,15,December 18,at New York Jets,W 20–17,7–7,MetLife Stadium,Recap,Detroit Lions,Mostly sunny,39,13:0,East Rutherford,New Jersey
+15,16,December 24,at Carolina Panthers,L 23–37,7–8,Bank of America Stadium,Recap,Detroit Lions,Sunny,20,13:0,Charlotte,North Carolina
+16,17,January 1,Chicago Bears,W 41–10,8–8,Ford Field,Recap,Detroit Lions,None (indoor stadium),72,13:0,Detroit,Michigan
+17,18,January 8,at Green Bay Packers,W 20–16,9–8,Lambeau Field,Recap,Detroit Lions,Cloudy,21,20:20,Green Bay,Wisconsin

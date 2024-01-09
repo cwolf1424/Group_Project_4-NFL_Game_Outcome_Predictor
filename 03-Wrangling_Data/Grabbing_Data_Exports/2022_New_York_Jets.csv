@@ -1,19 +1,19 @@
-,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather,time,location
-0,1,September 11,Baltimore Ravens,L 9–24,0–1,MetLife Stadium,Recap,New York Jets,"Rain, 73 °F (23 °C)",1:00 p.m. EDT,"MetLife Stadium, East Rutherford, New Jersey"
-1,2,September 18,at Cleveland Browns,W 31–30,1–1,FirstEnergy Stadium,Recap,New York Jets,"Sunny, 80 °F (27 °C)",1:00 p.m. EDT,"FirstEnergy Stadium, Cleveland, Ohio"
-2,3,September 25,Cincinnati Bengals,L 12–27,1–2,MetLife Stadium,Recap,New York Jets,"Mostly cloudy, 66 °F (19 °C)",1:00 p.m. EDT,"MetLife Stadium, East Rutherford, New Jersey"
-3,4,October 2,at Pittsburgh Steelers,W 24–20,2–2,Acrisure Stadium,Recap,New York Jets,"Cloudy, 58 °F (14 °C)",1:00 p.m. EDT,"Heinz Field, Pittsburgh, Pennsylvania"
-4,5,October 9,Miami Dolphins,W 40–17,3–2,MetLife Stadium,Recap,New York Jets,"Sunny and windy, 63 °F (17 °C)",1:00 p.m. EDT,"MetLife Stadium, East Rutherford, New Jersey"
-5,6,October 16,at Green Bay Packers,W 27–10,4–2,Lambeau Field,Recap,New York Jets,"Cloudy, 49 °F (9 °C)",1:00 p.m. EDT/12:00 p.m. CDT,"Lambeau Field, Green Bay, Wisconsin"
-6,7,October 23,at Denver Broncos,W 16–9,5–2,Empower Field at Mile High,Recap,New York Jets,64 °F (18 °C),4:05 p.m. EDT/2:05 p.m. MDT,"Empower Field Mile High, Denver, Colorado"
-7,8,October 30,New England Patriots,L 17–22,5–3,MetLife Stadium,Recap,New York Jets,"Mostly sunny, 59 °F (15 °C)",1:00 p.m. EDT,"MetLife Stadium, East Rutherford, New Jersey"
-8,9,November 6,Buffalo Bills,W 20–17,6–3,MetLife Stadium,Recap,New York Jets,"Warm and overcast, 76 °F (24 °C)",1:00 p.m. EST,"MetLife Stadium, East Rutherford, New Jersey"
-9,10,Bye,Bye,Bye,Bye,Bye,Bye,New York Jets,,,
-10,11,November 20,at New England Patriots,L 3–10,6–4,Gillette Stadium,Recap,New York Jets,"Mostly sunny, 37 °F (3 °C)",1:00 p.m. EST,"Gillette Stadium, Foxborough, Massachusetts"
-11,12,November 27,Chicago Bears,W 31–10,7–4,MetLife Stadium,Recap,New York Jets,"Rain, 52 °F (11 °C)",1:00 p.m. EST,"MetLife Stadium, East Rutherford, New Jersey"
-12,13,December 4,at Minnesota Vikings,L 22–27,7–5,U.S. Bank Stadium,Recap,New York Jets,None (indoor stadium),1:00 p.m. EST/12:00 p.m. CST,"U.S. Bank Stadium, Minneapolis, Minnesota"
-13,14,December 11,at Buffalo Bills,L 12–20,7–6,Highmark Stadium,Recap,New York Jets,"Rain showers, 37 °F (3 °C)",1:00 p.m. EST,"Highmark Stadium, Orchard Park, New York"
-14,15,December 18,Detroit Lions,L 17–20,7–7,MetLife Stadium,Recap,New York Jets,"Mostly sunny, 39 °F (4 °C)",1:00 p.m. EST,"MetLife Stadium, East Rutherford, New Jersey"
-15,16,December 22,Jacksonville Jaguars,L 3–19,7–8,MetLife Stadium,Recap,New York Jets,"Rain, 45 °F (7 °C)",8:15 p.m. EST,"MetLife Stadium, East Rutherford, New Jersey"
-16,17,January 1,at Seattle Seahawks,L 6–23,7–9,Lumen Field,Recap,New York Jets,"Partly sunny, 46 °F (8 °C)",4:05 p.m. EST/1:05 p.m. PST,"Lumen Field, Seattle, Washington"
-17,18,January 8,at Miami Dolphins,L 6–11,7–10,Hard Rock Stadium,Recap,New York Jets,78 °F (26 °C),1:00 p.m. EST,"Hard Rock Stadium, Miami Gardens, Florida"
+,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather_condition,temp_f,time,city,state
+0,1,September 11,Baltimore Ravens,L 9–24,0–1,MetLife Stadium,Recap,New York Jets,Rain,73,12:0,East Rutherford,New Jersey
+1,2,September 18,at Cleveland Browns,W 31–30,1–1,FirstEnergy Stadium,Recap,New York Jets,Sunny,80,12:0,Cleveland,Ohio
+2,3,September 25,Cincinnati Bengals,L 12–27,1–2,MetLife Stadium,Recap,New York Jets,Mostly cloudy,66,12:0,East Rutherford,New Jersey
+3,4,October 2,at Pittsburgh Steelers,W 24–20,2–2,Acrisure Stadium,Recap,New York Jets,Cloudy,58,12:0,Pittsburgh,Pennsylvania
+4,5,October 9,Miami Dolphins,W 40–17,3–2,MetLife Stadium,Recap,New York Jets,Sunny and windy,63,12:0,East Rutherford,New Jersey
+5,6,October 16,at Green Bay Packers,W 27–10,4–2,Lambeau Field,Recap,New York Jets,Cloudy,49,12:0,Green Bay,Wisconsin
+6,7,October 23,at Denver Broncos,W 16–9,5–2,Empower Field at Mile High,Recap,New York Jets,,64,15:5,Denver,Colorado
+7,8,October 30,New England Patriots,L 17–22,5–3,MetLife Stadium,Recap,New York Jets,Mostly sunny,59,12:0,East Rutherford,New Jersey
+8,9,November 6,Buffalo Bills,W 20–17,6–3,MetLife Stadium,Recap,New York Jets,Warm and overcast,76,13:0,East Rutherford,New Jersey
+9,10,Bye,Bye,Bye,Bye,Bye,Bye,New York Jets,,,,,
+10,11,November 20,at New England Patriots,L 3–10,6–4,Gillette Stadium,Recap,New York Jets,Mostly sunny,37,13:0,Foxborough,Massachusetts
+11,12,November 27,Chicago Bears,W 31–10,7–4,MetLife Stadium,Recap,New York Jets,Rain,52,13:0,East Rutherford,New Jersey
+12,13,December 4,at Minnesota Vikings,L 22–27,7–5,U.S. Bank Stadium,Recap,New York Jets,None (indoor stadium),72,13:0,Minneapolis,Minnesota
+13,14,December 11,at Buffalo Bills,L 12–20,7–6,Highmark Stadium,Recap,New York Jets,Rain showers,37,13:0,Orchard Park,New York
+14,15,December 18,Detroit Lions,L 17–20,7–7,MetLife Stadium,Recap,New York Jets,Mostly sunny,39,13:0,East Rutherford,New Jersey
+15,16,December 22,Jacksonville Jaguars,L 3–19,7–8,MetLife Stadium,Recap,New York Jets,Rain,45,20:15,East Rutherford,New Jersey
+16,17,January 1,at Seattle Seahawks,L 6–23,7–9,Lumen Field,Recap,New York Jets,Partly sunny,46,16:5,Seattle,Washington
+17,18,January 8,at Miami Dolphins,L 6–11,7–10,Hard Rock Stadium,Recap,New York Jets,,78,13:0,Miami Gardens,Florida

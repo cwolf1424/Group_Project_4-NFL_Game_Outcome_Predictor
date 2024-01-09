@@ -1,19 +1,19 @@
-,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather,time,location
-0,1,September 11,Green Bay Packers,W 23–7,1–0,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),3:25 p.m. CDT,"U.S. Bank Stadium, Minneapolis, Minnesota"
-1,2,September 19,at Philadelphia Eagles,L 7–24,1–1,Lincoln Financial Field,Recap,Minnesota Vikings,"Cloudy, 76 °F (24 °C)",8:30 p.m. EDT/7:30 p.m. CDT,"Lincoln Financial Field, Philadelphia, Pennsylvania"
-2,3,September 25,Detroit Lions,W 28–24,2–1,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),12:00 p.m. CDT,"U.S. Bank Stadium, Minneapolis, Minnesota"
-3,4,October 2,at New Orleans Saints,W 28–25,3–1,Tottenham Hotspur Stadium (London),Recap,Minnesota Vikings,"Partly cloudy, 64 °F (18 °C)",2:30 p.m. BST/8:30 a.m. CDT,"Tottenham Hotspur Stadium, London, United Kingdom"
-4,5,October 9,Chicago Bears,W 29–22,4–1,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),12:00 p.m. CDT,"U.S. Bank Stadium, Minneapolis, Minnesota"
-5,6,October 16,at Miami Dolphins,W 24–16,5–1,Hard Rock Stadium,Recap,Minnesota Vikings,"Partly cloudy, 86 °F (30 °C)",1:00 p.m. EDT/12:00 p.m. CDT,"Hard Rock Stadium, Miami Gardens, Florida"
-6,7,Bye,Bye,Bye,Bye,Bye,Bye,Minnesota Vikings,,,
-7,8,October 30,Arizona Cardinals,W 34–26,6–1,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),12:00 p.m. CDT,"U.S. Bank Stadium, Minneapolis, Minnesota"
-8,9,November 6,at Washington Commanders,W 20–17,7–1,FedExField,Recap,Minnesota Vikings,"Cloudy, 76 °F (24 °C)",1:00 p.m. EST/12:00 p.m. CST,"FedExField, Landover, Maryland"
-9,10,November 13,at Buffalo Bills,W 33–30 (OT),8–1,Highmark Stadium,Recap,Minnesota Vikings,"Cloudy, 38 °F (3 °C)",1:00 p.m. EST/12:00 p.m. CST,"Highmark Stadium, Orchard Park, New York"
-10,11,November 20,Dallas Cowboys,L 3–40,8–2,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),3:25 p.m. CST,"U.S. Bank Stadium, Minneapolis, Minnesota"
-11,12,November 24,New England Patriots,W 33–26,9–2,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),7:20 p.m. CST,"U.S. Bank Stadium, Minneapolis, Minnesota"
-12,13,December 4,New York Jets,W 27–22,10–2,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),12:00 p.m. CST,"U.S. Bank Stadium, Minneapolis, Minnesota"
-13,14,December 11,at Detroit Lions,L 23–34,10–3,Ford Field,Recap,Minnesota Vikings,None (indoor stadium),1:00 p.m. EST/12:00 p.m. CST,"Ford Field, Detroit, Michigan"
-14,15,December 17,Indianapolis Colts,W 39–36 (OT),11–3,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),12:00 p.m. CST,"U.S. Bank Stadium, Minneapolis, Minnesota"
-15,16,December 24,New York Giants,W 27–24,12–3,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),12:00 p.m. CST,"U.S. Bank Stadium, Minneapolis, Minnesota"
-16,17,January 1,at Green Bay Packers,L 17–41,12–4,Lambeau Field,Recap,Minnesota Vikings,"Clear, 40 °F (4 °C)",3:25 p.m. CST,"Lambeau Field, Green Bay, Wisconsin"
-17,18,January 8,at Chicago Bears,W 29–13,13–4,Soldier Field,Recap,Minnesota Vikings,"Mostly cloudy, 34 °F (1 °C)",12:00 p.m. CST,"Soldier Field, Chicago, Illinois"
+,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather_condition,temp_f,time,city,state
+0,1,September 11,Green Bay Packers,W 23–7,1–0,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,15:25,Minneapolis,Minnesota
+1,2,September 19,at Philadelphia Eagles,L 7–24,1–1,Lincoln Financial Field,Recap,Minnesota Vikings,Cloudy,76,19:30,Philadelphia,Pennsylvania
+2,3,September 25,Detroit Lions,W 28–24,2–1,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,12:0,Minneapolis,Minnesota
+3,4,October 2,at New Orleans Saints,W 28–25,3–1,Tottenham Hotspur Stadium (London),Recap,Minnesota Vikings,Partly cloudy,64,13:30,London,United Kingdom
+4,5,October 9,Chicago Bears,W 29–22,4–1,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,12:0,Minneapolis,Minnesota
+5,6,October 16,at Miami Dolphins,W 24–16,5–1,Hard Rock Stadium,Recap,Minnesota Vikings,Partly cloudy,86,12:0,Miami Gardens,Florida
+6,7,Bye,Bye,Bye,Bye,Bye,Bye,Minnesota Vikings,,,,,
+7,8,October 30,Arizona Cardinals,W 34–26,6–1,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,12:0,Minneapolis,Minnesota
+8,9,November 6,at Washington Commanders,W 20–17,7–1,FedExField,Recap,Minnesota Vikings,Cloudy,76,13:0,Landover,Maryland
+9,10,November 13,at Buffalo Bills,W 33–30 (OT),8–1,Highmark Stadium,Recap,Minnesota Vikings,Cloudy,38,13:0,Orchard Park,New York
+10,11,November 20,Dallas Cowboys,L 3–40,8–2,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,16:25,Minneapolis,Minnesota
+11,12,November 24,New England Patriots,W 33–26,9–2,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,20:20,Minneapolis,Minnesota
+12,13,December 4,New York Jets,W 27–22,10–2,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,13:0,Minneapolis,Minnesota
+13,14,December 11,at Detroit Lions,L 23–34,10–3,Ford Field,Recap,Minnesota Vikings,None (indoor stadium),72,13:0,Detroit,Michigan
+14,15,December 17,Indianapolis Colts,W 39–36 (OT),11–3,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,13:0,Minneapolis,Minnesota
+15,16,December 24,New York Giants,W 27–24,12–3,U.S. Bank Stadium,Recap,Minnesota Vikings,None (indoor stadium),72,13:0,Minneapolis,Minnesota
+16,17,January 1,at Green Bay Packers,L 17–41,12–4,Lambeau Field,Recap,Minnesota Vikings,Clear,40,16:25,Green Bay,Wisconsin
+17,18,January 8,at Chicago Bears,W 29–13,13–4,Soldier Field,Recap,Minnesota Vikings,Mostly cloudy,34,13:0,Chicago,Illinois

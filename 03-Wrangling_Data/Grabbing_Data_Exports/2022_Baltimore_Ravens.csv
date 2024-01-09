@@ -1,19 +1,19 @@
-,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather,time,location
-0,1,September 11,at New York Jets,W 24–9,1–0,MetLife Stadium,Recap,Baltimore Ravens,"Rain, 73 °F (23 °C)",1:00 p.m. EDT,"MetLife Stadium, East Rutherford, New Jersey"
-1,2,September 18,Miami Dolphins,L 38–42,1–1,M&T Bank Stadium,Recap,Baltimore Ravens,"Sunny, 82 °F (28 °C)",1:00 p.m. EDT,"M&T Bank Stadium, Baltimore, Maryland"
-2,3,September 25,at New England Patriots,W 37–26,2–1,Gillette Stadium,Recap,Baltimore Ravens,"Mostly cloudy, 66 °F (19 °C)",1:00 p.m. EDT,"Gillette Stadium, Foxborough, Massachusetts"
-3,4,October 2,Buffalo Bills,L 20–23,2–2,M&T Bank Stadium,Recap,Baltimore Ravens,"Cloudy, showers, 52 °F (11 °C)",1:00 p.m. EDT,"M&T Bank Stadium, Baltimore, Maryland"
-4,5,October 9,Cincinnati Bengals,W 19–17,3–2,M&T Bank Stadium,Recap,Baltimore Ravens,"Clear, 60 °F (16 °C)",8:20 p.m. EDT,"M&T Bank Stadium, Baltimore, Maryland"
-5,6,October 16,at New York Giants,L 20–24,3–3,MetLife Stadium,Recap,Baltimore Ravens,"Fair, 60 °F (16 °C)",1:00 p.m. EDT,"MetLife Stadium, East Rutherford, New Jersey"
-6,7,October 23,Cleveland Browns,W 23–20,4–3,M&T Bank Stadium,Recap,Baltimore Ravens,"Cloudy, 64 °F (18 °C)",1:00 p.m. EDT,"M&T Bank Stadium, Baltimore, Maryland"
-7,8,October 27,at Tampa Bay Buccaneers,W 27–22,5–3,Raymond James Stadium,Recap,Baltimore Ravens,"Cloudy, 79 °F (26 °C)",8:20 p.m. EDT,"Raymond James Stadium, Tampa, Florida"
-8,9,November 7,at New Orleans Saints,W 27–13,6–3,Caesars Superdome,Recap,Baltimore Ravens,None (indoor stadium),8:15 p.m. EST/7:15 p.m. CST,"Caesars Superdome, New Orleans, Louisiana"
-9,10,Bye,Bye,Bye,Bye,Bye,Bye,Baltimore Ravens,,,
-10,11,November 20,Carolina Panthers,W 13–3,7–3,M&T Bank Stadium,Recap,Baltimore Ravens,"Sunny, 36 °F (2 °C)",1:00 p.m. EST,"M&T Bank Stadium, Baltimore, Maryland"
-11,12,November 27,at Jacksonville Jaguars,L 27–28,7–4,TIAA Bank Field,Recap,Baltimore Ravens,74 °F (23 °C),1:25 p.m. EST,"TIAA Bank Field, Jacksonville, Florida"
-12,13,December 4,Denver Broncos,W 10–9,8–4,M&T Bank Stadium,Recap,Baltimore Ravens,"Clear, 43 °F (6 °C)",1:00 p.m. EST,"M&T Bank Stadium, Baltimore, Maryland"
-13,14,December 11,at Pittsburgh Steelers,W 16–14,9–4,Acrisure Stadium,Recap,Baltimore Ravens,"Cloudy, 43 °F (6 °C)",1:00 p.m. EST,"Acrisure Stadium, Pittsburgh, Pennsylvania"
-14,15,December 17,at Cleveland Browns,L 3–13,9–5,FirstEnergy Stadium,Recap,Baltimore Ravens,"Cloudy, 32 °F (0 °C)",4:30 p.m. EST,"FirstEnergy Stadium, Cleveland, Ohio"
-15,16,December 24,Atlanta Falcons,W 17–9,10–5,M&T Bank Stadium,Recap,Baltimore Ravens,"Clear, 17 °F (−8 °C)",1:00 p.m. EST,"M&T Bank Stadium, Baltimore, Maryland"
-16,17,January 1,Pittsburgh Steelers,L 13–16,10–6,M&T Bank Stadium,Recap,Baltimore Ravens,"Clear, 50 °F (10 °C)",8:20 p.m. EST,"M&T Bank Stadium, Baltimore, Maryland"
-17,18,January 8,at Cincinnati Bengals,L 16–27,10–7,Paycor Stadium,Recap,Baltimore Ravens,"Cloudy, 40 °F (4 °C)",1:00 p.m. EST,"Paycor Stadium, Cincinnati, Ohio"
+,Week,Date,Opponent,Result,Record,Venue,Recap,team,weather_condition,temp_f,time,city,state
+0,1,September 11,at New York Jets,W 24–9,1–0,MetLife Stadium,Recap,Baltimore Ravens,Rain,73,12:0,East Rutherford,New Jersey
+1,2,September 18,Miami Dolphins,L 38–42,1–1,M&T Bank Stadium,Recap,Baltimore Ravens,Sunny,82,12:0,Baltimore,Maryland
+2,3,September 25,at New England Patriots,W 37–26,2–1,Gillette Stadium,Recap,Baltimore Ravens,Mostly cloudy,66,12:0,Foxborough,Massachusetts
+3,4,October 2,Buffalo Bills,L 20–23,2–2,M&T Bank Stadium,Recap,Baltimore Ravens,Cloudy showers,52,12:0,Baltimore,Maryland
+4,5,October 9,Cincinnati Bengals,W 19–17,3–2,M&T Bank Stadium,Recap,Baltimore Ravens,Clear,60,19:20,Baltimore,Maryland
+5,6,October 16,at New York Giants,L 20–24,3–3,MetLife Stadium,Recap,Baltimore Ravens,Fair,60,12:0,East Rutherford,New Jersey
+6,7,October 23,Cleveland Browns,W 23–20,4–3,M&T Bank Stadium,Recap,Baltimore Ravens,Cloudy,64,12:0,Baltimore,Maryland
+7,8,October 27,at Tampa Bay Buccaneers,W 27–22,5–3,Raymond James Stadium,Recap,Baltimore Ravens,Cloudy,79,19:20,Tampa,Florida
+8,9,November 7,at New Orleans Saints,W 27–13,6–3,Caesars Superdome,Recap,Baltimore Ravens,None (indoor stadium),72,20:15,New Orleans,Louisiana
+9,10,Bye,Bye,Bye,Bye,Bye,Bye,Baltimore Ravens,,,,,
+10,11,November 20,Carolina Panthers,W 13–3,7–3,M&T Bank Stadium,Recap,Baltimore Ravens,Sunny,36,13:0,Baltimore,Maryland
+11,12,November 27,at Jacksonville Jaguars,L 27–28,7–4,TIAA Bank Field,Recap,Baltimore Ravens,,74,13:25,Jacksonville,Florida
+12,13,December 4,Denver Broncos,W 10–9,8–4,M&T Bank Stadium,Recap,Baltimore Ravens,Clear,43,13:0,Baltimore,Maryland
+13,14,December 11,at Pittsburgh Steelers,W 16–14,9–4,Acrisure Stadium,Recap,Baltimore Ravens,Cloudy,43,13:0,Pittsburgh,Pennsylvania
+14,15,December 17,at Cleveland Browns,L 3–13,9–5,FirstEnergy Stadium,Recap,Baltimore Ravens,Cloudy,32,16:30,Cleveland,Ohio
+15,16,December 24,Atlanta Falcons,W 17–9,10–5,M&T Bank Stadium,Recap,Baltimore Ravens,Clear,17,13:0,Baltimore,Maryland
+16,17,January 1,Pittsburgh Steelers,L 13–16,10–6,M&T Bank Stadium,Recap,Baltimore Ravens,Clear,50,20:20,Baltimore,Maryland
+17,18,January 8,at Cincinnati Bengals,L 16–27,10–7,Paycor Stadium,Recap,Baltimore Ravens,Cloudy,40,13:0,Cincinnati,Ohio
