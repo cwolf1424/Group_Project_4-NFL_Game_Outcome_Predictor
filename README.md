@@ -74,7 +74,18 @@ and:
 Building_Model.ipynb
 --------------------------------------------------
 
+The Following Section:
 
+    # Create a StandardScaler Instance
+    scaler = StandardScaler()
+
+    # Fit the StandardScaler
+    features_scaler = scaler.fit(features_array)
+
+    # Scale the Features
+    scaled_features = features_scaler.transform(features_array)
+
+Was taken from Caleb Wolf's "AlphabetSoupCharity_Optimization.ipynb" file from the week 21 homework.
 
 
 --------------------------------------------------
