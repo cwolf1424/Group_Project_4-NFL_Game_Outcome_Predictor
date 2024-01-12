@@ -47,7 +47,7 @@ function submitForm() {
     payload.away_avg_pts_for = d3.select("#txtAwayPtsFor").node().value;
     payload.away_avg_pts_against = d3.select("#txtAwayPtsAgainst").node().value;
 
-    // // event details
+    // event details
     payload.venue = d3.select("#selVenues option:checked").text();
     payload.city = d3.select("#selCities option:checked").text();
     payload.state = d3.select("#selStates option:checked").text();
@@ -62,9 +62,13 @@ function submitForm() {
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
-        body: "data=" + JSON.stringify(payload)
+        body: "data=" + encodeURIComponent(JSON.stringify(payload))
     }).then(function(data) {
-        console.log(data);
+        console.log(data['winning_team']);
+        d3.select('#navButtons').style("display", "none");
+        d3.select('#navIndicators').style("display", "none");
+        d3.select('#divResult').style("display", "block");
+        d3.select('#teamLogo').property('src', `/static/img/${data['winning_team']}.png`)
     });
 }
 
