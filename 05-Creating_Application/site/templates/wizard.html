@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFL Matchup Predictor</title>
+  
+    <!-- Font CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/wizard.css">
+
+    
+</head>
+
+<body>
+    <form id="regForm">
+        <div class="tab">
+            <h1>Welcome to the NFL Matchup Predictor</h1>
+            <h1>nfl logo goes here</h1>
+        </div>
+        
+        <div class="tab">
+            <h1>Home Team Data</h1>
+            Home Team:
+            <p><select id="selHomeTeams"></select></p>
+            Wins:
+            <p><input id="txtHomeWins"></p>
+            Losses:
+            <p><input id="txtHomeLosses"></p>
+            Current Streak:
+            <p>
+                <input type="radio" id="optHomeWin" value="W" name="home_streak">
+                <label for="optHomeWin">Win</label>
+                <input type="radio" id="optHomeLoss" value="L" name="home_streak">
+                <label for="optHomeLoss">Loss</label>
+            </p>
+            <p><input id="txtHomeStreak"></p>
+            Avg Points For:
+            <p><input id="txtHomePtsFor"></p>
+            Avg Points Against:
+            <p><input id="txtHomePtsAgainst"></p>
+          </div>
+
+        <div class="tab">
+            <h1>Away Team Data</h1>
+            Away Team:
+            <p><select id="selAwayTeams"></select></p>
+            Wins:
+            <p><input id="txtAwayWins"></p>
+            Losses:
+            <p><input id="txtAwayLosses"></p>
+            Current Streak:
+            <p>
+                <input type="radio" id="optAwayWin" value="W" name="away_streak">
+                <label for="optAwayWin">Win</label>
+                <input type="radio" id="optAwayLoss" value="L" name="away_streak">
+                <label for="optAwayLoss">Loss</label>
+            </p>
+            <p><input id="txtAwayStreak"></p>
+            Avg Points For:
+            <p><input id="txtAwayPtsFor"></p>
+            Avg Points Against:
+            <p><input id="txtAwayPtsAgainst"></p>
+          </div>
+        </div>
+        <div class="tab">
+            <h1>Event Details:</h1>
+            Venue:
+            <p><select id="selVenues"></select></p>
+            City:
+            <p><select id="selCities"></select></p>
+            State:
+            <p><select id="selStates"></select></p>
+            Month:
+            <p><select id="selMonths"></select></p>
+            Season Week:
+            <p><input id="txtWeekNum"></p>
+            Kickoff:
+            <p><select id="selTimes"></select></p>
+            Weather Conditions:
+            <p><select id="selWeather"></select></p>
+            Temperature (F):
+            <p><input id="txtTemp"></p>
+        </div>
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    
+    
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/wizard.js"></script>
+    <script type="text/javascript" src="static/js/logic.js"></script>
+
+</body>
+
+</html>
