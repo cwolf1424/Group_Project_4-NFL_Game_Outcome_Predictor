@@ -54,7 +54,14 @@ and:
 and:
     cur_df_cleaned_away = cur_df_cleaned[cur_df_cleaned["Opponent"].str.contains("at ") == True]
 
+From:
 
+    https://saturncloud.io/blog/how-to-delete-rows-with-null-values-in-a-specific-column-in-pandas-dataframe/#:~:text=Deleting%20rows%20with%20null%20values%20in%20a%20specific%20column%20can,values%20in%20the%20specified%20column.&text=df%20is%20the%20Pandas%20DataFrame%20that%20you%20want%20to%20modify.
+
+The following method was used:
+
+    # Drop Games With Null Values for Time
+    cur_df = cur_df.dropna(subset=["time"], how="any")
 
 From:
 
@@ -86,6 +93,20 @@ The Following Section:
     scaled_features = features_scaler.transform(features_array)
 
 Was taken from Caleb Wolf's "AlphabetSoupCharity_Optimization.ipynb" file from the week 21 homework.
+
+
+The Following Section:
+
+    rf_model = RandomForestClassifier(random_state=1, n_estimators=1000).fit(X_train, y_train)
+
+    print(f'Training Score: {rf_model.score(X_train, y_train)}')
+    print(f'Testing Score: {rf_model.score(X_test, y_test)}')
+
+Was mirroring code from Week 20, Class 3, Activity 4, 04-Ins_Forest-Features", "RandomForest-Feature-Selection.ipynb" provided by Professor Benajamin Alfrord :
+
+    clf = RandomForestClassifier(random_state=1, n_estimators=500).fit(X_train_scaled, y_train)
+    print(f'Training Score: {clf.score(X_train_scaled, y_train)}')
+    print(f'Testing Score: {clf.score(X_test_scaled, y_test)}')
 
 
 --------------------------------------------------
