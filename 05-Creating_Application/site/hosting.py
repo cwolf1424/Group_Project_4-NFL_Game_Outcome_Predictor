@@ -71,8 +71,27 @@ def getAwayTeams():
 def makePredition():
     form = json.loads(request.form['data'])
 
-    print('test')
-    return json.dumps(form)
+    # get the results
+    #   1 = home team
+    #   2 = away team
+    #   3 = tie
+
+    outcome = "1"
+
+    winning_team = "nfl_logo"
+
+    if outcome == "1":
+        winning_team = form['home_team']
+    elif outcome == "2":
+        winning_team = form['away_team']
+    elif outcome == "3":
+        winning_team = "tie"     
+
+    matchup_results = {
+        "winning_team": winning_team
+    }
+
+    return json.dumps(matchup_results)
 
 if __name__ == '__main__':
     hosting.run(port=8000, debug=True)
