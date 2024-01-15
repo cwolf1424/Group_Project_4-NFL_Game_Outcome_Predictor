@@ -41,8 +41,8 @@ function submitForm() {
         payload.away_loss_streak = 0;
     }
     else {
-        payload.home_win_streak = 0;
-        payload.home_loss_streak = d3.select("#txtAwayStreak").node().value;
+        payload.away_win_streak = 0;
+        payload.away_loss_streak = d3.select("#txtAwayStreak").node().value;
     }
     payload.away_avg_pts_for = d3.select("#txtAwayPtsFor").node().value;
     payload.away_avg_pts_against = d3.select("#txtAwayPtsAgainst").node().value;
