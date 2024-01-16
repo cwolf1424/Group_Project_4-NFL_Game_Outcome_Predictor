@@ -7,19 +7,25 @@ NFL Machine Learning Model
 
 Summary:
 --------------------------------------------------
+For summmary and findings, see "Presentation.pptx" file
 
-Findings:
---------------------------------------------------
+
+////////////////////////////////////////////
+Sources for Data
+////////////////////////////////////////////
+
+
+The folowing data sources were used:
+
+
+Wikipeia Pages:
+
+Images:
 
 
 ////////////////////////////////////////////
 Sources for Code
 ////////////////////////////////////////////
-
-The folowing data sources were used:
-
-Wikipeia Pages:
-
 
 
 --------------------------------------------------
@@ -76,8 +82,6 @@ The method for the concatination of dataframes was used to write:
 and:
 
     master_away_df = pd.concat([master_away_df, cur_df_cleaned_away], ignore_index= True)
-
-
 
 --------------------------------------------------
 Building_Model.ipynb
@@ -252,8 +256,6 @@ Also mirrors that of Caleb Wolf's "AlphabetSoupCharity_Optimization.ipynb" file 
     Were from W21_Class2_Activities 01-Ins-Over_the_Moon_NN.ipynb
 
 
-
-
 I used the following method:
 
     import dill
@@ -291,11 +293,6 @@ And to load them:
     test_pca = pickle.load(open("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/pca_model","rb"))
 
     test_rf = pickle.load(open("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/rf_model","rb"))
-
-
-
-
-
 
 
 --------------------------------------------------
