@@ -20,8 +20,17 @@ The folowing data sources were used:
 
 Wikipeia Pages:
 
+The game and statistics data was pulled from Wikipedia.  Since we were concentrating on the 2022 season, the url for each team was in the following format:
+
+    https://en.wikipedia.org/wiki/2022_{team_name}_season
+
+We developed a list of team names and performed the data retrieval in a `for` loop.
+
 Images:
 
+The NFL logo and team images used in the prediction application were manually downloaded and stored with the application from this url:
+
+    https://www.nfl.com/teams/
 
 ////////////////////////////////////////////
 Sources for Code
@@ -299,12 +308,31 @@ And to load them:
 Creating_Application.ipynb
 -------------------------------------------------
 
+This Jupyter Notebook was used to export the distinct values in the wrangled data into CSV files for use in binding HTML dropdown values.
+
+One example (weather conditions) can be seen here:
+
+    # Create Dataframe for Weather
+    weather_conditions_list = wrangled_df["Weather Condition"].unique()
+    # Create Dataframe of Unique Values
+    weather_conditions_df = pd.DataFrame(weather_conditions_list)
+    # Rename Column
+    weather_conditions_df=weather_conditions_df.rename(columns={0:"Weather"})
+    # Sort Alphabetically
+    weather_conditions_df = weather_conditions_df.sort_values("Weather", ascending=True)
+    # Reset Index
+    weather_conditions_df = weather_conditions_df.reset_index(drop=True)
+    # Export New Dataframe
+    weather_conditions_df.to_csv("Reference_Data/Weather_Data.csv")
 
 
 --------------------------------------------------
-App.py
+hosting.py
 -------------------------------------------------
 
+The Flask application used to populate dropdown data as well as receive matchup data and perform the prediction, using the exported models from the Building Model phase.  Added a route for each dropdown as well as a POST route that received JSON data from the form element.
 
+The starter code for the wizard HTML template used as the main web user interface was obtained here:
 
+    https://www.w3schools.com/howto/howto_js_form_steps.asp?
 
