@@ -32,6 +32,7 @@ The NFL logo and team images used in the prediction application were manually do
 
     https://www.nfl.com/teams/
 
+
 ////////////////////////////////////////////
 Sources for Code
 ////////////////////////////////////////////
@@ -107,16 +108,21 @@ Was provided by Google Colab when you select "Mount Drive"
 
 The Following Section:
 
-    # Create a StandardScaler Instance
+    # Scale the Data
+
+    # Create a Scaler
     scaler = StandardScaler()
 
     # Fit the StandardScaler
-    features_scaler = scaler.fit(features_array)
+    features_scaler = scaler.fit(X_train)
 
     # Scale the Features
-    scaled_features = features_scaler.transform(features_array)
+    scaled_X_train = features_scaler.transform(X_train)
+    scaled_X_test = features_scaler.transform(X_test)
 
-Was taken from Caleb Wolf's "AlphabetSoupCharity_Optimization.ipynb" file from the week 21 homework using the method provided in the starter file:
+    scaled_X_train
+
+Was using code similar to Caleb Wolf's "AlphabetSoupCharity_Optimization.ipynb" file from the week 21 homework using the method provided in the starter file:
 
     # Create a StandardScaler Instance
     scaler = StandardScaler()
@@ -151,10 +157,59 @@ Was mirroring code from Week 20, Class 3, Activity 4, "04-Ins_Forest-Features", 
     print(f'Training Score: {clf.score(X_train_scaled, y_train)}')
     print(f'Testing Score: {clf.score(X_test_scaled, y_test)}')
 
-This was also used for analyzing effectiveness of other sections with nearly identical syntax.
+This was also used for analyzing effectiveness of other models with nearly identical syntax.
 
-The following Section:
+The following Sections:
 
+    # Check for K-Value with The Heighest Accuracy
+    training_data_scores = []
+    testing_data_scores = []
+
+    for k in range(1, 25, 2):
+
+        scaled_knn_model = KNeighborsClassifier(n_neighbors=k)
+        scaled_knn_model.fit(scaled_X_train, y_train)
+
+        train_score = scaled_knn_model.score(scaled_X_train, y_train)
+        test_score = scaled_knn_model.score(scaled_X_test, y_test)
+
+        training_data_scores.append(train_score)
+        testing_data_scores.append(test_score)
+
+        print(f"k: {k}, Train/Test Score: {train_score:.3f}/{test_score:.3f}")
+
+
+    plt.plot(range(1, 25, 2), training_data_scores, marker='o')
+    plt.plot(range(1, 25, 2), testing_data_scores, marker="x")
+    plt.xlabel("Number of Neighbors")
+    plt.ylabel("Testing Accuracy Score")
+    plt.show()
+
+and:
+
+    # Check for K-Value with The Heighest Accuracy
+    training_data_scores = []
+    testing_data_scores = []
+
+    for k in range(1, 25, 2):
+
+        pca_knn_model = KNeighborsClassifier(n_neighbors=k)
+        pca_knn_model.fit(pca_X_train, y_train)
+
+        train_score = pca_knn_model.score(pca_X_train, y_train)
+        test_score = pca_knn_model.score(pca_X_test, y_test)
+
+        training_data_scores.append(train_score)
+        testing_data_scores.append(test_score)
+
+        print(f"k: {k}, Train/Test Score: {train_score:.3f}/{test_score:.3f}")
+
+
+    plt.plot(range(1, 25, 2), training_data_scores, marker='o')
+    plt.plot(range(1, 25, 2), testing_data_scores, marker="x")
+    plt.xlabel("Number of Neighbors")
+    plt.ylabel("Testing Accuracy Score")
+    plt.show()
 
 Used the method from Week 20, Class 2, Activity 5, "05-Ins_KNN", Ins_K_Nearest_Neighbors:
 
@@ -178,65 +233,68 @@ Used the method from Week 20, Class 2, Activity 5, "05-Ins_KNN", Ins_K_Nearest_N
     plt.ylabel("Testing accuracy Score")
     plt.show()
 
-For the following section:
-
-# Check for K-Value with The Heighest Accuracy
-    training_data_scores = []
-    testing_data_scores = []
-
-    for k in range(1, 50, 2):
-
-        knn_model = KNeighborsClassifier(n_neighbors=k)
-        knn_model.fit(X_train, y_train)
-
-        train_score = knn_model.score(X_train, y_train)
-        test_score = knn_model.score(X_test, y_test)
-
-        training_data_scores.append(train_score)
-        testing_data_scores.append(test_score)
-
-        print(f"k: {k}, Train/Test Score: {train_score:.3f}/{test_score:.3f}")
-        
-        
-    plt.plot(range(1, 50, 2), training_data_scores, marker='o')
-    plt.plot(range(1, 50, 2), testing_data_scores, marker="x")
-    plt.xlabel("Number of Neighbors")
-    plt.ylabel("Testing Accuracy Score")
-    plt.show()
-
-The code for the Nural Network Model:
+The code for the Nural Network Models:
 
     # Count features
-    features_count = len(X_train[0])
+    features_count = len(scaled_X_train[0])
     print(f'Total Features: {features_count}')
 
     # Define Nural Network Model
 
-    nn = tf.keras.models.Sequential()
+    scaled_nn = tf.keras.models.Sequential()
 
     # Input layer
-    nn.add(tf.keras.layers.Dense(units=4, activation="relu", input_dim=features_count))
+    scaled_nn.add(tf.keras.layers.Dense(units=4, activation="relu", input_dim=features_count))
 
     # Second layer
-    nn.add(tf.keras.layers.Dense(units=2, activation="relu"))
-
-    # Third layer
-    nn.add(tf.keras.layers.Dense(units=2, activation="relu"))
+    scaled_nn.add(tf.keras.layers.Dense(units=2, activation="relu"))
 
     # Output layer
-    nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+    scaled_nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
 
     # Check the structure of the model
-    nn.summary()
+    scaled_nn.summary()
 
     # Compile the model
-    nn.compile(loss="binary_crossentropy", optimizer="adam",metrics=["accuracy"])
+    scaled_nn.compile(loss="binary_crossentropy", optimizer="adam",metrics=["accuracy"])
 
     # Train the model
-    fit_nn = nn.fit(X_train, y_train, epochs=500)
+    scaled_nn.fit(scaled_X_train, y_train, epochs=150)
 
     # Evaluate the model using the test data
-    model_loss, model_accuracy = nn.evaluate(X_test,y_test,verbose=2)
+    model_loss, model_accuracy = scaled_nn.evaluate(scaled_X_test,y_test,verbose=2)
+    print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
+
+And:
+
+    # Count features
+    features_count = len(pca_X_train[0])
+    print(f'Total Features: {features_count}')
+
+    # Define Nural Network Model
+
+    pca_nn = tf.keras.models.Sequential()
+
+    # Input layer
+    pca_nn.add(tf.keras.layers.Dense(units=4, activation="relu", input_dim=features_count))
+
+    # Second layer
+    pca_nn.add(tf.keras.layers.Dense(units=2, activation="relu"))
+
+    # Output layer
+    pca_nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+
+    # Check the structure of the model
+    pca_nn.summary()
+
+    # Compile the model
+    pca_nn.compile(loss="binary_crossentropy", optimizer="adam",metrics=["accuracy"])
+
+    # Train the model
+    pca_nn.fit(pca_X_train, y_train, epochs=150)
+
+    # Evaluate the model using the test data
+    model_loss, model_accuracy = pca_nn.evaluate(pca_X_test,y_test,verbose=2)
     print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
 
 Also mirrors that of Caleb Wolf's "AlphabetSoupCharity_Optimization.ipynb" file from the week 21 homework using the method provided in the starter file:
@@ -287,11 +345,13 @@ To save our models:
     with open ("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/scaler_model","wb") as f:
     pickle.dump(features_scaler,f)
 
-    with open ("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/pca_model","wb") as f:
-    pickle.dump(pca_model,f)
+    # The best model did not use PCA
+    #with open ("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/pca_model","wb") as f:
+    #pickle.dump(pca_model,f)
 
-    with open ("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/rf_model","wb") as f:
-    pickle.dump(rf_model,f)
+    with open ("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/scaled_knn_model","wb") as f:
+    pickle.dump(scaled_knn_model,f)
+        pickle.dump(rf_model,f)
 
 And to load them:
 
@@ -299,9 +359,10 @@ And to load them:
 
     test_scaler = pickle.load(open("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/scaler_model","rb"))
 
-    test_pca = pickle.load(open("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/pca_model","rb"))
+    # The best model did not use PCA
+    #test_pca = pickle.load(open("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/pca_model","rb"))
 
-    test_rf = pickle.load(open("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/rf_model","rb"))
+    test_rf = pickle.load(open("/content/drive/MyDrive/Colab Notebooks/Building_Model_Exports/scaled_knn_model","rb"))
 
 
 --------------------------------------------------
